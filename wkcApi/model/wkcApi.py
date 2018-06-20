@@ -114,6 +114,7 @@ def SignTransaction(address, to_address, money, nonce):
         "params": [w3.toHex(signed.rawTransaction)],
         "id": 1
     }
+
     print('transaction == >', transaction)
     headers = {'content-type': 'application/json', "Nc": "IN"}
 
