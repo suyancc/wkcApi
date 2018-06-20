@@ -187,6 +187,7 @@
                     var list = localStorage.getItem('baglist');
                     list = JSON.parse(list);
                     if (list) {
+                        vm.balance = 0;
                         list.forEach(function (e) {
                             vm.balance = vm.balance + parseFloat(e.balance);
                             return e;
